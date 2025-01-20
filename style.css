@@ -117,7 +117,10 @@ body {
 }
 
 .gallery {
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(10, 435px);
+    gap: 30px;
 }
 
 .gallery__card {
@@ -134,6 +137,19 @@ body {
     border-radius: 16px;
     object-fit: cover;
 }
+.first {
+    grid-row: span 2;
+}
+.second {
+    grid-column: 2;
+}
+.forth {
+    grid-row: 2;
+}
+.fifth {
+    grid-column: 2;
+}
+
 
 
 
