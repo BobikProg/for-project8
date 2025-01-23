@@ -60,6 +60,26 @@ body {
     font-family: inherit;
     font-size: 20px;
     text-transform: capitalize;
+    position: relative;
+    transition: opacity 1s;
+}
+
+.nav__link:hover {
+    /* opacity: .1; */
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    border: 0 solid white;
+    transition: .3s;
+}
+.nav__link:hover::after {
+    border: 1px solid white;
+    width: 100%;
 }
 
 .header__menu {
@@ -82,9 +102,7 @@ body {
     margin: 0 5px;
 }
 
-.nav__link:hover {
-    text-decoration: underline;
-}
+
 
 .author {
     position: absolute;
@@ -132,6 +150,13 @@ body {
     position: relative;
     z-index: 0;
     border-radius: 16px;
+
+    transition: .5s;
+}
+
+.gallery__card:hover {
+    transform: scale(1.02);
+    z-index: 1;
 }
 
 .gallery__photo {
