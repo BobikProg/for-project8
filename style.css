@@ -82,8 +82,12 @@ body {
     width: 100%;
 }
 .first:hover {
+    transition: 2s;
     filter: none;
 }
+/* .first:hover::after {
+    transition-delay: filter 5s;
+} */
 
 
 .header__menu {
