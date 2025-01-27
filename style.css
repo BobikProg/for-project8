@@ -81,6 +81,10 @@ body {
     border: 1px solid white;
     width: 100%;
 }
+.first:hover {
+    filter: none;
+}
+
 
 .header__menu {
     position: absolute;
@@ -240,6 +244,9 @@ body {
     list-style-type: none;
     display: flex;
     gap: 50px;
+}
+.first {
+    filter: blur(1px);
 }
 
 @media screen and (max-width: 1245px) {
